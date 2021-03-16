@@ -1,35 +1,104 @@
-Order a Melongram
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Order a Melongram!</title>
+    </head>
+    <body>
+        <header>
+            <h1>Order a Melongram</h1>
+        </header>
+        
+        <section id="intro">
+            <p>
+                There's no better way to show a loved one you care than with a Melongram.<br/>
+                
+                Each Melongram comes with a custom message printed on high-quality cardstock
+                and your choice of a hand-picked, premium melon.
+            </p>
+        </section>
+        
+        <section id="melon-options">
+            <h2>Melon Options</h2>
+            
+            <p>
+                Choose from one of these melons:
+                <table>
+                    <tr>
+                        <td>Watermelon</td> 
+                        <td>$1,200.00</td>
+                    </tr>
+                    <tr>
+                        <td>Canteloupe</td> 
+                        <td>$400.00</td>
+                    </tr>
+                    <tr>
+                        <td>Honeydew</td> 
+                        <td>$1,750,00.00</td>
+                    </tr>
+                </table>
+            </p>
+        </section>
+        
+        <section id="order-form">
+            <h2>Order Form</h2>
+            
+            <form>
+                <div>
+                    <p><label for="bane">Your name</label></p>
+                    <input type="text" name="name" id="name"><br/>
+                </div>
 
-There's no better way to show a loved one you care than with a Melongram.
+                <div>
+                    <label for="recipient">Who are we sending this to?</label>
+                    <input type="text" name="recipient" id="recipient"><br/>
+                </div>
+                
+                <div>
+                    <p>
+                        <label for="melons">Choose a melon</label>
+                        <select name="melon id="melons">
+                            <<option value="watermelon">Watermleon</option>>
+                            <option value="canteloupe">Canteloupe</option>
+                            <option value="honeydew">Honeydew</option>
+                        </select>
+                    </p>
+                </div>
+                
+                <div>
+                    <fieldset>
+                        <p>
+                            <legend>When should we deliver?<legend>
+                            <div>
+                                <input type="radio" name="time" value="am">Morning</input>
+                            </div>
 
-Each Melongram comes with a custom message printed on high-quality cardstock
-and your choice of a hand-picked, premium melon.
+                            <div>
+                                <input type="radio" name="time" value="pm">Evening</input>
+                            </div>
 
-Melon Options
+                            <div>
+                                <input type="radio" name="time" value="any">Any time</input>
+                            </div>
 
-Choose from one of these melons:
+                        </p>
+                    </fieldset>
+                </div>
+                
+                <div>
+                    <label for="message">Enter your message:</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
 
-Watermelon $1,200.00
-Canteloupe $400.00
-Honeydew $1,750,00.00
+                <div>
+                    <fieldset>
+                        <legend>Subscribe to our newsletter</legend>
+                        <input type="checkbox" name="subscribe" value="yes" id="sub-yes">
+                        <label for="sub-yes">Yes</label>
+                    </fieldset>
+                </div>
 
-Order Form
-
-Your name
-
-Who are we sending this to?
-
-Choose a melon
-Watermleon
-Canteloupe
-Honeydew
-
-When should we deliver?
-Morning
-Evening
-Any time
-
-Enter your message:
-
-Subscribe to our newsletter
-Yes
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </body>
+</html>  
